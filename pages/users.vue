@@ -204,13 +204,7 @@
         })
       },
       save() {
-        this.formHasErrors = false
-
-        Object.keys(this.form).forEach(f => {
-          if (!this.form[f]) this.formHasErrors = true
-
-          this.$refs[f].validate(true)
-        })
+        
         this.loading = true
         if (this.editedIndex == -1) {
           this.$axios.post('/ventas/api/users', this.editedItem).then(result => {

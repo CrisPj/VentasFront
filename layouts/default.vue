@@ -88,6 +88,11 @@
               icon: 'bubble_chart',
               title: 'Logins',
               to: '/logins'
+            },
+            {
+              icon: 'bubble_chart',
+              title: 'FCM',
+              to: '/fcm'
             }
           ]
         }
